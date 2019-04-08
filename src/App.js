@@ -4,11 +4,15 @@ import './App.css';
 
 class App extends Component {
 
+  sayHello = () => {
+    this.setState({ greeting: true })
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <button>HI</button>
+          <button onClick={this.sayHello}>HI</button>
         </header>
       </div>
     );
